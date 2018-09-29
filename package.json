@@ -1,0 +1,29 @@
+{
+  "name": "angularjs-react-sample",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An example using react components in angularjs",
+  "repository": "https://github.com/zotoio/angularjs-react-sample",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^0.9.2"
+  },
+  "dependencies": {
+    "angular": "^1.7.4",
+    "angular-animate": "^1.7.4",
+    "angular-aria": "^1.7.4",
+    "angular-material": "^1.1.10",
+    "angular-messages": "^1.7.4",
+    "angular-sanitize": "^1.7.4",
+    "ngreact": "^0.5.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "systemjs": "^0.19.0",
+    "typescript": "^3.1.1",
+    "@types/angular": "^1.6.51",
+    "@types/angular-material": "1.1.59"
+  },
+  "scripts": {
+    "start": "live-server --open=app"
+  }
+}
