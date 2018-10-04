@@ -48,4 +48,5 @@ Please see the full documentation. https://github.com/coatue-oss/react2angular
 
 Please see the full documentation.  https://github.com/ngReact/ngReact
 
-
+## Shared state
+This can be accomplished via injected services in the case of react2angular, however redux https://redux.js.org/basics/usagewithreact and ng-redux https://github.com/angular-redux/ng-redux should be considered.
