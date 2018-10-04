@@ -9,7 +9,7 @@ interface IState {
     count: number;
 }
 
-export class HelloComponent extends React.Component<IProps, IState> {
+export class MyReactComponentTwo extends React.Component<IProps, IState> {
     public static defaultProps: React.Partial<IProps> = {
         countBy: 1,
     };
@@ -24,9 +24,16 @@ export class HelloComponent extends React.Component<IProps, IState> {
         this.setState({ count });
     };
 
+    public style = {
+        "background-color": "#a5e6aa",
+        "padding": "5px",
+        "margin": "5px"
+    };
+
     public render() {
         return (
-            <div>
+            <div style={this.style}>
+                <h3>2. ngReact component</h3>
                 <p>{this.props.name} favorite number is {this.state.count}</p>
                 <button onClick={this.increase}>Increase</button>
             </div>

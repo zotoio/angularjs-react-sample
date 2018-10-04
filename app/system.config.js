@@ -22,7 +22,11 @@ System.config({
     'react': '../node_modules/react/umd/react.production.min.js',
     'react-dom': '../node_modules/react-dom/umd/react-dom.production.min.js',
     'ngreact': '../node_modules/ngreact/ngReact.js',
-    'typescript': '../node_modules/typescript/lib/typescript.js'
+    'typescript': '../node_modules/typescript/lib/typescript.js',
+    'react2angular': '../node_modules/react2angular/index.js',
+    'lodash.frompairs': '../node_modules/lodash.frompairs/index.js',
+    'lodash': '../node_modules/lodash/',
+    'ngcomponent': '../node_modules/ngcomponent/index.js'
   },
   
   meta: {
@@ -35,6 +39,17 @@ System.config({
     'react': {format: 'global' },
     'react-dom': { format: 'global' },
     'ngreact': {formal: 'global'},
-    'typescript': {format: 'global'}
+    'typescript': {format: 'global'},
+    'react2angular': {format: 'cjs'},
+    'lodash.frompairs': {format: 'cjs'},
+    'lodash': {format: 'cjs'},
+    'ngcomponent': {format: 'cjs'}
+  },
+
+  paths: {
+    'lodash/*': '../node_modules/lodash/*'
+  },
+  packages: {
+      'lodash': {defaultExtension: 'js'},
   }
 });
